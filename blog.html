@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Articles | Becky Olamide – RN, PhD, Instructional Designer</title>
+<meta name="description" content="Articles on nursing education, healthcare eLearning, instructional design, AI in clinical settings, and academic writing by Becky Olamide, RN, PhD, MPH."/>
+<meta name="keywords" content="nursing education articles, healthcare instructional design blog, AI nursing education, NCLEX NGN, medical writing, Becky Olamide"/>
+<meta name="author" content="Becky Olamide, RN, PhD, MPH"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.beckyolamide.com/blog.html"/>
+<meta property="og:title" content="Articles | Becky Olamide"/>
+<meta property="og:description" content="Articles on nursing education, healthcare eLearning, instructional design, and AI in clinical settings."/>
+<meta property="og:url" content="https://www.beckyolamide.com/blog.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://www.beckyolamide.com/IMG_1867.JPG"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23c0605e'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' font-family='serif' fill='white' font-weight='bold'>B</text></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --rose:#c0605e;--rose-deep:#a04846;--rose-light:#e8908f;
+  --blush:#f5d5d4;--blush-light:#fdf0ef;--blush-mid:#f0c4c3;
+  --taupe:#b5a49a;--taupe-light:#e8ddd8;--taupe-dark:#6b5c56;
+  --taupe-deep:#3d2f2c;
+  --cream:#fdf8f6;--warm-white:#fffcfb;
+  --ink:#1e1412;--muted:#8a7570;--border:#e8d8d4;
+  --card:#ffffff;--sage:#7a9e7e;--gold:#c9a84c;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.7;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 5rem;background:rgba(253,248,246,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:all .3s}
+nav.scrolled{padding:.8rem 5rem;box-shadow:0 2px 24px rgba(192,96,94,.1)}
+.nav-logo{font-family:'Cormorant',serif;font-size:1.4rem;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:.02em;transition:color .2s}
+.nav-logo span{color:var(--rose)}
+.nav-logo:hover{color:var(--rose)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--taupe-dark);text-decoration:none;position:relative;padding-bottom:2px;transition:color .25s}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1.5px;background:var(--rose);transition:width .3s}
+.nav-links a:hover{color:var(--rose)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a.active{color:var(--rose)}
+.nav-hire{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.6rem 1.5rem;background:var(--rose);color:#fff;text-decoration:none;border-radius:100px;transition:all .25s}
+.nav-hire:hover{background:var(--taupe-deep)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;border:none;background:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:63px;left:0;right:0;background:var(--warm-white);padding:1.5rem 2rem;flex-direction:column;gap:.7rem;border-bottom:1px solid var(--border);z-index:299;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:.95rem;font-weight:600;color:var(--ink);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--border)}
+
+/* PAGE HERO */
+.page-hero{padding:10rem 0 5rem;background:var(--warm-white);text-align:center;position:relative;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(245,213,212,.5) 0%,transparent 65%);pointer-events:none}
+.page-hero .section-label{justify-content:center;margin-bottom:1rem}
+.page-hero-title{font-family:'Cormorant',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--ink);margin-bottom:1rem}
+.page-hero-title em{font-style:italic;color:var(--rose)}
+.page-hero-sub{font-size:.97rem;color:var(--muted);max-width:520px;margin:0 auto 2rem;line-height:1.85}
+
+/* FILTERS */
+.blog-filters{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}
+.blog-filter-btn{font-size:.72rem;font-weight:600;letter-spacing:.07em;padding:.5rem 1.2rem;border:1.5px solid var(--border);border-radius:100px;background:none;color:var(--muted);cursor:pointer;transition:all .25s}
+.blog-filter-btn:hover,.blog-filter-btn.active{background:var(--rose);color:#fff;border-color:var(--rose);box-shadow:0 4px 14px rgba(192,96,94,.3)}
+
+/* SECTION COMMONS */
+.container{max-width:1180px;margin:0 auto;padding:0 2.5rem}
+.section-label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.8rem;display:flex;align-items:center;gap:.7rem}
+.section-label::before{content:'';display:block;width:28px;height:1px;background:var(--rose)}
+
+/* BLOG GRID */
+.blog-section{padding:5rem 0 7rem}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+.blog-card{border:1px solid var(--border);border-radius:14px;background:var(--card);overflow:hidden;transition:all .35s;display:flex;flex-direction:column}
+.blog-card:hover{box-shadow:0 16px 48px rgba(192,96,94,.13);transform:translateY(-5px)}
+.blog-card-img{width:100%;height:200px;object-fit:cover;display:block;transition:transform .4s}
+.blog-card:hover .blog-card-img{transform:scale(1.03)}
+.blog-card-img-placeholder{width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.blog-card-body{padding:1.5rem;display:flex;flex-direction:column;flex:1}
+.blog-card-cat{font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin-bottom:.5rem}
+.blog-card h2{font-family:'Cormorant',serif;font-size:1.25rem;font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:.6rem;transition:color .25s}
+.blog-card:hover h2{color:var(--rose)}
+.blog-card p{font-size:.85rem;color:var(--muted);line-height:1.75;margin-bottom:1.2rem;flex:1}
+.blog-card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.9rem;border-top:1px solid var(--border);margin-top:auto}
+.blog-card-meta{font-size:.72rem;color:var(--taupe);display:flex;align-items:center;gap:.5rem}
+.blog-card-meta span{padding:.15rem .5rem;background:var(--blush-light);border-radius:4px;color:var(--rose-deep);font-weight:600}
+.blog-read-btn{font-size:.72rem;font-weight:700;color:var(--rose);text-decoration:none;letter-spacing:.05em;display:flex;align-items:center;gap:.3rem;transition:gap .25s}
+.blog-read-btn:hover{gap:.6rem}
+.blog-read-btn::after{content:'→'}
+
+/* COMING SOON CARD */
+.blog-card-soon{border:1.5px dashed var(--border);background:transparent;opacity:.6;cursor:default}
+.blog-card-soon:hover{transform:none;box-shadow:none}
+.blog-card-soon .blog-card-img-placeholder{background:var(--blush-light)}
+.coming-badge{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--taupe);border:1px solid var(--border);border-radius:100px;padding:.25rem .7rem}
+
+/* NEWSLETTER */
+.newsletter-section{background:var(--taupe-deep);padding:5rem 0}
+.newsletter-inner{max-width:580px;margin:0 auto;text-align:center}
+.newsletter-label{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.8rem}
+.newsletter-title{font-family:'Cormorant',serif;font-size:2.2rem;font-weight:300;color:#fff;line-height:1.2;margin-bottom:.8rem}
+.newsletter-title em{font-style:italic;color:var(--blush)}
+.newsletter-sub{font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:2rem;line-height:1.8}
+.newsletter-form{display:flex;gap:.7rem;max-width:440px;margin:0 auto}
+.newsletter-input{flex:1;padding:.8rem 1.2rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:100px;color:#fff;font-size:.9rem;font-family:'Jost',sans-serif;outline:none;transition:border-color .25s}
+.newsletter-input::placeholder{color:rgba(255,255,255,.3)}
+.newsletter-input:focus{border-color:var(--rose-light)}
+.newsletter-btn{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.8rem 1.6rem;background:var(--rose);color:#fff;border:none;border-radius:100px;cursor:pointer;white-space:nowrap;transition:all .25s}
+.newsletter-btn:hover{background:var(--rose-light)}
+
+/* FOOTER */
+footer{background:#0e0908;padding:2rem 5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-logo{font-family:'Cormorant',serif;font-size:1.1rem;color:rgba(255,255,255,.5);font-weight:400}
+.footer-logo span{color:var(--rose-light)}
+.footer-mid{font-size:.75rem;color:rgba(255,255,255,.3);text-align:center}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:1024px){
+  nav{padding:1rem 2.5rem}
+  .nav-links,.nav-hire{display:none}
+  .hamburger{display:flex}
+  .blog-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .blog-grid{grid-template-columns:1fr}
+  .page-hero{padding:8rem 0 4rem}
+  footer{padding:1.5rem 2rem;flex-direction:column;text-align:center}
+  .newsletter-form{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="https://www.beckyolamide.com" class="nav-logo">Becky <span>Olamide</span></a>
+  <ul class="nav-links">
+    <li><a href="https://www.beckyolamide.com/#about">About</a></li>
+    <li><a href="https://www.beckyolamide.com/#work-history">Reviews</a></li>
+    <li><a href="https://www.beckyolamide.com/#portfolio">Portfolio</a></li>
+    <li><a href="https://www.beckyolamide.com/#skills">Skills</a></li>
+    <li><a href="https://www.beckyolamide.com/#experience">Experience</a></li>
+    <li><a href="https://www.beckyolamide.com/#certifications">Credentials</a></li>
+    <li><a href="/blog.html" class="active">Articles</a></li>
+    <li><a href="https://www.beckyolamide.com/#contact">Contact</a></li>
+  </ul>
+  <a href="https://www.upwork.com/freelancers/~0178bae84ad565c90c?mp_source=share" target="_blank" rel="noopener" class="nav-hire">Hire Me on Upwork</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="https://www.beckyolamide.com/#about" onclick="closeMenu()">About</a>
+  <a href="https://www.beckyolamide.com/#work-history" onclick="closeMenu()">Reviews</a>
+  <a href="https://www.beckyolamide.com/#portfolio" onclick="closeMenu()">Portfolio</a>
+  <a href="https://www.beckyolamide.com/#skills" onclick="closeMenu()">Skills</a>
+  <a href="https://www.beckyolamide.com/#experience" onclick="closeMenu()">Experience</a>
+  <a href="https://www.beckyolamide.com/#certifications" onclick="closeMenu()">Credentials</a>
+  <a href="/blog.html" onclick="closeMenu()">Articles</a>
+  <a href="https://www.beckyolamide.com/#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <div class="section-label">From the Desk of Becky Olamide</div>
+    <h1 class="page-hero-title">Articles on Nursing, <em>Healthcare & Education</em></h1>
+    <p class="page-hero-sub">Clinically grounded perspectives on instructional design, AI in healthcare education, nursing curriculum, academic writing, and what actually works in clinical learning.</p>
+    <div class="blog-filters">
+      <button class="blog-filter-btn active" onclick="filterBlog('all',this)">All</button>
+      <button class="blog-filter-btn" onclick="filterBlog('ai',this)">AI in Healthcare</button>
+      <button class="blog-filter-btn" onclick="filterBlog('nursing',this)">Nursing Education</button>
+      <button class="blog-filter-btn" onclick="filterBlog('instructional',this)">Instructional Design</button>
+      <button class="blog-filter-btn" onclick="filterBlog('writing',this)">Medical Writing</button>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG GRID -->
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-grid" id="blogGrid">
+      <div class="blog-card reveal" data-cat="writing instructional" style="cursor:pointer" onclick="window.location='/articles/hipaa-healthcare-content-writers.html'">
+        <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Healthcare professional reviewing HIPAA compliance documentation" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Medical Writing · Compliance</div>
+          <h2>What Every Healthcare Content Writer Should Know About HIPAA</h2>
+          <p>Healthcare content writers who handle patient information or work with covered entities have direct HIPAA obligations. Here is what applies to your work in 2026.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Apr 7, 2026</div>
+            <a href="/articles/hipaa-healthcare-content-writers.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="writing ai" style="cursor:pointer" onclick="window.location='/articles/womens-health-content-what-brands-get-wrong.html'">
+        <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Woman reviewing health information online seeking reliable clinical content" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Women's Health · Content Strategy</div>
+          <h2>Women's Health Content in 2026: What Brands Get Wrong</h2>
+          <p>Women drive 80% of healthcare decisions yet most women's health content fails them clinically and factually. An RN breaks down exactly where brands keep getting it wrong.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Mar 8, 2026</div>
+            <a href="/articles/womens-health-content-what-brands-get-wrong.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="instructional nursing" style="cursor:pointer" onclick="window.location='/articles/freelance-career-nurse-writer-instructional-designer.html'">
+        <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nurse working on laptop building freelance writing career" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Professional Development · Freelance</div>
+          <h2>How to Build a Freelance Career as a Nurse Writer and Instructional Designer</h2>
+          <p>Nurses have clinical expertise most freelance writers cannot replicate. An RN, PhD, and Top Rated Plus freelancer breaks down how to build a sustainable healthcare freelance career.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>8 min read</span> Feb 10, 2026</div>
+            <a href="/articles/freelance-career-nurse-writer-instructional-designer.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="ai writing" style="cursor:pointer" onclick="window.location='/articles/ai-changing-academic-writing-researchers.html'">
+        <img src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Researcher writing academic paper at desk with reference materials" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Academic Writing · Research</div>
+          <h2>How AI Is Changing Academic Writing and What It Means for Researchers</h2>
+          <p>13.5% of biomedical abstracts in 2024 showed signs of AI-generated text. A PhD and academic writing specialist breaks down what is changing, what the risks are, and how to use AI without compromising research integrity.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Jan 12, 2026</div>
+            <a href="/articles/ai-changing-academic-writing-researchers.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="ai writing" style="cursor:pointer" onclick="window.location='/articles/ai-generated-medical-content-vs-human-written.html'">
+        <img src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Healthcare professional reviewing medical content for clinical accuracy" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Medical Writing · AI in Healthcare</div>
+          <h2>AI-Generated Medical Content vs. Human-Written: What's the Real Risk?</h2>
+          <p>AI-generated medical content hallucinates clinical facts at measurable rates. Plausible is not the same as accurate in healthcare writing. Here is what the research shows.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>8 min read</span> Dec 1, 2025</div>
+            <a href="/articles/ai-generated-medical-content-vs-human-written.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="instructional" style="cursor:pointer" onclick="window.location='/articles/addie-vs-agile-healthcare-elearning.html'">
+        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Instructional design team reviewing healthcare eLearning project plan" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Instructional Design · Methodology</div>
+          <h2>ADDIE vs. Agile: Which Model Works Best for Healthcare eLearning</h2>
+          <p>ADDIE and Agile are the two dominant instructional design frameworks. Here is which works better for healthcare eLearning and when a hybrid approach is the right call.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Nov 3, 2025</div>
+            <a href="/articles/addie-vs-agile-healthcare-elearning.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="instructional" style="cursor:pointer" onclick="window.location='/articles/microlearning-healthcare-when-it-works.html'">
+        <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Healthcare professional completing short mobile learning module" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Instructional Design · eLearning</div>
+          <h2>Microlearning in Healthcare: When It Works and When It Doesn't</h2>
+          <p>Microlearning is one of the most overhyped terms in healthcare L&D. Here is exactly where it delivers results and where it falls short for clinical training.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Oct 6, 2025</div>
+            <a href="/articles/microlearning-healthcare-when-it-works.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="nursing ai instructional" style="cursor:pointer" onclick="window.location='/articles/nln-summit-2025-takeaways.html'">
+        <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nurse educators at a professional conference session" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Professional Development · Conference</div>
+          <h2>Takeaways from the 2025 NLN Education Summit: What Nurse Educators Are Talking About</h2>
+          <p>The 2025 NLN Summit focused entirely on AI in nursing education. Here are the conversations that matter most coming out of three days with over 1,000 nurse educators.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Sept 22, 2025</div>
+            <a href="/articles/nln-summit-2025-takeaways.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="instructional" style="cursor:pointer" onclick="window.location='/articles/how-to-build-scorm-module-healthcare.html'">
+        <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Healthcare professional completing eLearning module on laptop" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Instructional Design · eLearning</div>
+          <h2>How to Build a SCORM Module That Actually Teaches</h2>
+          <p>Most SCORM modules check a compliance box and nothing else. Here is how to build healthcare eLearning that changes clinical behavior, not just tracks completion.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Aug 12, 2025</div>
+            <a href="/articles/how-to-build-scorm-module-healthcare.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="nursing instructional" style="cursor:pointer" onclick="window.location='/articles/what-makes-nursing-simulation-work.html'">
+        <img src="https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nursing simulation lab with clinical educator and students" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Clinical Education · Simulation</div>
+          <h2>What Makes a Nursing Simulation Scenario Work</h2>
+          <p>A poorly designed simulation teaches nothing a lecture could not. A well-designed one changes how students think at the bedside. Here is what separates the two.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>8 min read</span> Jul 15, 2025</div>
+            <a href="/articles/what-makes-nursing-simulation-work.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="nursing instructional" style="cursor:pointer" onclick="window.location='/articles/write-nclex-questions-clinical-judgment.html'">
+        <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nursing educator writing clinical assessment questions at a desk" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Nursing Education · Item Writing</div>
+          <h2>How to Write NCLEX-Style Questions That Actually Test Clinical Judgment</h2>
+          <p>Most NCLEX-style questions test memorization dressed up as clinical reasoning. Here is how to write items that genuinely measure judgment in the NGN era.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>8 min read</span> Jun 10, 2025</div>
+            <a href="/articles/write-nclex-questions-clinical-judgment.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="nursing instructional" style="cursor:pointer" onclick="window.location='/articles/ngn-nclex-curriculum-developers.html'">
+        <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nursing student studying clinical materials and exam preparation resources" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Nursing Education · NCLEX</div>
+          <h2>NGN Is Here: What the New NCLEX Format Means for Curriculum Developers</h2>
+          <p>The Next Generation NCLEX launched in April 2023 and changed everything about how nursing schools write assessments. Here is what curriculum developers need to act on now.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>8 min read</span> May 8, 2025</div>
+            <a href="/articles/ngn-nclex-curriculum-developers.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="nursing instructional" style="cursor:pointer" onclick="window.location='/articles/hidden-cost-non-clinician-nursing-curriculum.html'">
+        <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nurse reviewing curriculum documents at a clinical workstation" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Nursing Education</div>
+          <h2>The Hidden Cost of Hiring a Non-Clinician to Write Your Nursing Curriculum</h2>
+          <p>Hiring a non-clinician looks cheaper upfront. But inaccurate clinical content carries costs that go far beyond the invoice. An RN explains what gets missed.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Apr 7, 2025</div>
+            <a href="/articles/hidden-cost-non-clinician-nursing-curriculum.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="instructional nursing" style="cursor:pointer" onclick="window.location='/articles/rn-advantage-instructional-design.html'">
+        <img src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nurse in scrubs reviewing clinical materials at a desk" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Instructional Design</div>
+          <h2>The RN Advantage: Why Clinical Experience Makes Better Instructional Designers</h2>
+          <p>What separates a clinically grounded instructional designer from one who just knows the tools? More than most hiring managers realize.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>7 min read</span> Mar 8, 2025</div>
+            <a href="/articles/rn-advantage-instructional-design.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="ai nursing" style="cursor:pointer" onclick="window.location='/articles/ai-nursing-education.html'">
+        <img src="https://images.pexels.com/photos/6098051/pexels-photo-6098051.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Nurse in scrubs using tablet in hospital setting" class="blog-card-img" loading="lazy" onclick="event.stopPropagation()"/>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">AI in Nursing Education</div>
+          <h2>What Nurse Educators Get Wrong About AI in the Classroom</h2>
+          <p>AI in nursing education is not all-or-nothing. A clinical instructor and instructional designer breaks down where AI helps, where it fails, and why clinical judgment cannot be automated.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-meta"><span>8 min read</span> Feb 14, 2025</div>
+            <a href="/articles/ai-nursing-education.html" class="blog-read-btn" onclick="event.stopPropagation()">Read</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<div class="newsletter-section">
+  <div class="newsletter-inner">
+    <div class="newsletter-label">Stay in the Loop</div>
+    <h2 class="newsletter-title">New articles, <em>straight to you</em></h2>
+    <p class="newsletter-sub">Clinical takes on instructional design, nursing education, and healthcare writing. No fluff, no filler. Published when there's something worth saying.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" class="newsletter-input" placeholder="your@email.com" required/>
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Becky <span>Olamide</span></div>
+  <div class="footer-mid">PhD · BSN · MPH · RN · Top Rated Plus Freelancer<br/>
+    <a href="https://www.beckyolamide.com" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.75rem;border-bottom:1px solid rgba(255,255,255,.2)">Back to Portfolio</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.upwork.com/freelancers/~0178bae84ad565c90c?mp_source=share" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.75rem;border-bottom:1px solid rgba(255,255,255,.2)">Upwork</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/becky-olamide-9a5101403/" target="_blank" rel="noopener" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.75rem;border-bottom:1px solid rgba(255,255,255,.2)">LinkedIn</a>
+  </div>
+  <div style="font-size:.72rem;color:rgba(255,255,255,.3)">© 2026 Becky Olamide</div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);
+});
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open')}
+
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+function filterBlog(cat, btn){
+  document.querySelectorAll('.blog-filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.blog-card').forEach(card=>{
+    const cats = card.dataset.cat || '';
+    card.style.display = (cat === 'all' || cats.includes(cat)) ? '' : 'none';
+  });
+}
+
+function handleNewsletter(e){
+  e.preventDefault();
+  const btn = e.target.querySelector('.newsletter-btn');
+  btn.textContent = 'Subscribed!';
+  btn.style.background = 'var(--sage)';
+  e.target.reset();
+  setTimeout(()=>{btn.textContent='Subscribe';btn.style.background='';},3000);
+}
+</script>
+</body>
+</html>
